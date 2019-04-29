@@ -1,0 +1,260 @@
+body {
+    background: url('knitswatch.jpg');
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: rgb(12 ,52, 61);
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(216, 112, 147, 0.719);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.present {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    background-color: rgba(216, 112, 147, 0.719);
+    border-radius: 15px;
+    font-size: 40px;
+    padding: 10px;
+    width: 300px;
+    color: rgb(12 ,52, 61);
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    background-color:  rgba(216, 112, 147, 0.719);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 26px;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.counters {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    font-size: 15px;
+}
+
+.letTheFrenzyBegin, .question {
+    background-color:  rgba(216, 112, 147, 0.719);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    align-content: center;
+}
+
+.frenzy, .submitButton, .nextPattern, .tinkButton {
+    width: 150px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(12 ,52, 61);
+    border-radius: 10px;
+    border-color: rgb(12 ,52, 61);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frenzy:hover, .submitButton:hover, .nextPattern:hover, .tinkButton:hover {
+    background-color: rgb(35, 151, 177);
+}
+
+.frenzy:active, .submitButton:active, .nextPattern:active, .tinkButton:active {
+    background-color: rgb(12 ,52, 61);
+    border-color: rgb(35, 151, 177);
+}
+
+.answers {
+    margin-top: 10px;
+    background-color:  rgba(216, 112, 147, 0.719);
+}
+
+.qandaForm {
+    display: none;
+}
+
+fieldset {
+    border: none;
+}
+
+form {
+    background-color: rgba(216, 112, 147, 0.719);
+    border-radius: 15px;
+    text-align: left;
+}
+
+.submitCenter {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label {
+    padding: 10x;
+    font-size: 20px;
+}
+
+input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+}
+
+.radioCover {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(12 ,52, 61);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+input[type='radio']:checked ~ .radioCover {
+    background-color: rgb(35, 151, 177);
+}
+
+.stitch {
+    width: 75%;
+}
+
+.stashEarned, .finalStash {
+    background-color: rgba(216, 112, 147, 0.719);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.yarnBall2, .motivationSheep {
+    width: 150px;
+    margin: auto;
+}
+
+.rowCounter p {
+    font-size: 12px;
+}
+
+.rowCounter {
+    background-color: rgba(50, 205, 50, 0.719);
+    width: 25%;
+    height: 100px;
+    border-radius: 75px;
+    align-content: center;
+}
+
+.stashParent {
+    background-color: rgba(216, 112, 147, 0.719);
+    width: 75%;
+    height: 100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.stashList p {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.addYarn {
+    list-style: none inside;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    padding-left: 0px;
+}
+
+.stashBall {
+    width: 35px;
+}
+
+@media screen and (min-width: 768px) {
+    .total {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .counters {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 10px;
+        width: 20%;
+    }
+
+    .rowCounter p {
+        font-size: 14px;
+    }
+
+    .rowCounter{
+        width: 125px;
+        height: 125px;
+    }
+
+    .stashParent {
+        width: 125px;
+        height: 375px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .stashList p {
+        font-size: 14px;
+        margin: 2px;
+    }
+
+    .stashList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    
+    .addYarn {
+        margin-left: 10px;
+        padding-left: 0px;
+    }
+    
+    .stashBall {
+        width: 50px;
+    }
+
+    .qanda {
+        width: 80%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .qanda {
+        width: 60%;
+        justify-content: center;
+    }
+}
